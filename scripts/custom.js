@@ -46,36 +46,6 @@
                 });
             });
         });
-        if ($('.facts-list').length) {
-            $('.facts-list').owlCarousel({
-                loop: true,
-                nav: false,
-                dots: true,
-                items: 3,
-                margin: 30,
-                autoplay: false,
-                smartSpeed: 700,
-                autoplayTimeout: 6000,
-                responsive: {
-                    0: {
-                        items: 1,
-                        margin: 0
-                    },
-                    460: {
-                        items: 1,
-                        margin: 0
-                    },
-                    576: {
-                        items: 2,
-                        margin: 20
-                    },
-                    992: {
-                        items: 3,
-                        margin: 30
-                    }
-                }
-            });
-        }
         if ($('.gallery-list').length) {
             $('.gallery-list').owlCarousel({
                 loop: false,
@@ -122,25 +92,6 @@
             $('.navbar-collapse').slideUp(300);
         }).on('click', '.next-section', function () {
             fullpage_api.moveSectionDown();
-        });
-        $('.facts-row').on('inview', function (event, isInView) {
-            $('.count-number').each(function () {
-                $(this).prop('Counter', 0).animate({
-                    Counter: $(this).text()
-                }, {
-                    duration: 1000,
-                    easing: 'swing',
-                    step: function (now) {
-                        $(this).text(Math.ceil(now));
-                    }
-                });
-                setTimeout(function () {
-                    $('.count-number').removeClass('count-number').addClass('counted');
-                }, 1000);
-            });
-        });
-        $('.skills-row').on('inview', function (event, isInView) {
-            $(this).addClass('view');
         });
         $(document).on('click', '.menu-trigger', function () {
             $('body').toggleClass('sidemenu-open');
