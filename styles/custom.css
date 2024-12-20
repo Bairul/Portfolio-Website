@@ -11,8 +11,8 @@ CSS SITEMAP >>>>
   02. HEADER CSS
   03. SOCIAL ICONS CSS
   04. WELCOME BLOCK CSS
-  05. ABOUT BLOCK CSS
-  07. WORK BLOCK CSS
+  05. WORK BLOCK CSS
+  06. SHOWCASE BLOCK CSS
 
 
 ==================================================*/
@@ -423,9 +423,6 @@ a#logo {
   opacity: 1;
 }
 
-/*==============================================
-06. SERVICES BLOCK CSS
-================================================*/
 .owl-carousel .owl-dots .owl-dot {
   border-radius: 3px;
 }
@@ -456,7 +453,7 @@ a#logo {
 }
 
 /*==============================================
-07. WORK BLOCK CSS
+05. WORK BLOCK CSS
 ================================================*/
 .gallery-section {
   text-align: center;
@@ -581,7 +578,9 @@ a#logo {
   box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
 }
 
-
+/*==============================================
+06. GENERAL CSS
+================================================*/
 
 .about-img {
   margin: 0 auto 40px;
