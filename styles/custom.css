@@ -580,3 +580,62 @@ a#logo {
 .thumb-button:disabled {
   box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
 }
+
+
+
+.about-img {
+  margin: 0 auto 40px;
+  position:relative;
+}
+.about-img img, .about-img video {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 40px rgba(0,0,0,.3);
+  box-shadow: 0 0 40px rgba(0,0,0,.3);
+}
+.about-contentbox {
+  margin-top: 80px;
+  text-align:left;
+  line-height:1.8;
+}
+.about-contentbox span {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.about-contentbox h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.project-languages {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.project-languages span {
+  background: #e8f0fe;
+  color: #1a73e8;
+  font-size: 0.9em;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.github-link {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  background: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+.github-link:hover {
+  background: #555;
+}
